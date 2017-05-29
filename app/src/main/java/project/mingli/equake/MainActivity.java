@@ -190,7 +190,6 @@ public class MainActivity extends AppCompatActivity implements LocationListener 
             };
         }
 
-
         BackgroundTask backgroundTask = new BackgroundTask(this);
         backgroundTask.execute("10.4444","20.44444");
 
