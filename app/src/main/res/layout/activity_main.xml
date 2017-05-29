@@ -1,0 +1,349 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/scrollview"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_margin="10dp">
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="project.mingli.equake.MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="GPS COORDINATES"
+        android:gravity="center"
+        android:layout_margin="8dp"
+        android:id="@+id/textView1" />
+
+    <TextView
+        android:id="@+id/latitude"
+        android:layout_width="180dp"
+        android:layout_height="25dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/textView1"
+        android:background="@drawable/border_style"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:gravity="center"
+        android:hint="Latitude"/>
+
+    <TextView
+        android:id="@+id/longitude"
+        android:layout_width="180dp"
+        android:layout_height="25dp"
+        android:gravity="center"
+        android:hint="Longitude"
+        android:layout_above="@+id/textView2"
+        android:background="@drawable/border_style"
+        android:layout_alignRight="@+id/textView1"
+        android:layout_alignEnd="@+id/textView1" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView1"
+        android:layout_alignStart="@+id/textView1"
+        android:layout_below="@+id/latitude"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginBottom="8dp"
+        android:gravity="center"
+        android:text="ACCELEROMETER COORDINATES (m/sec^2)" />
+
+    <TextView
+        android:id="@+id/xaxis"
+        android:layout_width="120dp"
+        android:layout_height="25dp"
+        android:background="@drawable/border_style"
+        android:gravity="center"
+        android:hint="X-axis"
+        android:layout_marginTop="8dp"
+        android:layout_below="@+id/textView2"
+        android:layout_alignLeft="@+id/textView2"
+        android:layout_alignStart="@+id/textView2" />
+
+    <TextView
+        android:id="@+id/yaxis"
+        android:layout_width="120dp"
+        android:layout_height="25dp"
+        android:gravity="center"
+        android:hint="Y-axis"
+        android:background="@drawable/border_style"
+        android:layout_marginTop="8dp"
+        android:layout_below="@+id/textView2"
+        android:layout_toRightOf="@+id/xaxis"
+        android:layout_toEndOf="@+id/xaxis" />
+
+    <TextView
+        android:id="@+id/zaxis"
+        android:layout_width="120dp"
+        android:layout_height="25dp"
+        android:gravity="center"
+        android:hint="Z-axis"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/border_style"
+        android:layout_below="@+id/textView2"
+        android:layout_toRightOf="@+id/yaxis"
+        android:layout_toEndOf="@+id/yaxis" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginBottom="8dp"
+        android:gravity="center"
+        android:text="GYROSCOPE COORDINATES (rad/s)"
+        android:layout_below="@+id/yaxis"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:id="@+id/xaxisgyro"
+        android:layout_width="120dp"
+        android:layout_height="25dp"
+        android:gravity="center"
+        android:hint="X-axis"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/border_style"
+        android:layout_below="@+id/textView3"
+        android:layout_alignLeft="@+id/textView2"
+        android:layout_alignStart="@+id/textView2"/>
+
+    <TextView
+        android:id="@+id/yaxisgyro"
+        android:layout_width="120dp"
+        android:layout_height="25dp"
+        android:gravity="center"
+        android:hint="Y-axis"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/border_style"
+        android:layout_below="@+id/textView3"
+        android:layout_toRightOf="@+id/xaxisgyro"
+        android:layout_toEndOf="@+id/xaxisgyro" />
+
+    <TextView
+        android:id="@+id/zaxisgyro"
+        android:layout_width="120dp"
+        android:layout_height="25dp"
+        android:gravity="center"
+        android:hint="Z-axis"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/border_style"
+        android:layout_below="@+id/textView3"
+        android:layout_toRightOf="@+id/yaxisgyro"
+        android:layout_toEndOf="@+id/yaxisgyro" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginBottom="8dp"
+        android:layout_below="@+id/yaxisgyro"
+        android:gravity="center"
+        android:text="GRAVITY COORDINATES" />
+
+    <TextView
+        android:id="@+id/xaxisgrav"
+        android:layout_width="120dp"
+        android:layout_height="25dp"
+        android:gravity="center"
+        android:hint="X-axis"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/border_style"
+        android:layout_alignLeft="@+id/textView2"
+        android:layout_alignStart="@+id/textView2"
+        android:layout_below="@+id/textView4" />
+
+    <TextView
+        android:id="@+id/yaxisgrav"
+        android:layout_width="120dp"
+        android:layout_height="25dp"
+        android:gravity="center"
+        android:hint="Y-axis"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/border_style"
+        android:layout_below="@+id/textView4"
+        android:layout_toRightOf="@+id/xaxisgrav"
+        android:layout_toEndOf="@+id/xaxisgrav"
+        android:text="Y-axis" />
+
+    <TextView
+        android:id="@+id/zaxisgrav"
+        android:layout_width="120dp"
+        android:layout_height="25dp"
+        android:gravity="center"
+        android:hint="Z-axis"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/border_style"
+        android:layout_below="@+id/textView4"
+        android:layout_toRightOf="@+id/yaxisgrav"
+        android:layout_toEndOf="@+id/yaxisgrav" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginBottom="8dp"
+        android:layout_below="@id/yaxisgrav"
+        android:gravity="center"
+        android:text="LINEAR ACCELERATION COORDINATES" />
+
+    <TextView
+        android:id="@+id/xaxis_lin_acce"
+        android:layout_width="120dp"
+        android:layout_height="25dp"
+        android:gravity="center"
+        android:hint="X-axis"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/border_style"
+        android:layout_alignLeft="@+id/textView2"
+        android:layout_alignStart="@+id/textView2"
+        android:layout_below="@+id/textView5" />
+
+    <TextView
+        android:id="@+id/yaxis_lin_acce"
+        android:layout_width="120dp"
+        android:layout_height="25dp"
+        android:gravity="center"
+        android:hint="Y-axis"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/border_style"
+        android:layout_below="@+id/textView5"
+        android:layout_toRightOf="@+id/xaxis_lin_acce"
+        android:layout_toEndOf="@+id/xaxis_lin_acce" />
+
+    <TextView
+        android:id="@+id/zaxis_lin_acce"
+        android:layout_width="120dp"
+        android:layout_height="25dp"
+        android:gravity="center"
+        android:hint="Z-axis"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/border_style"
+        android:layout_below="@+id/textView5"
+        android:layout_toRightOf="@+id/yaxis_lin_acce"
+        android:layout_toEndOf="@+id/yaxis_lin_acce" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginBottom="8dp"
+        android:layout_below="@id/yaxis_lin_acce"
+        android:gravity="center"
+        android:text="MAGNETIC FIELD" />
+
+    <TextView
+        android:id="@+id/xaxis_magnetic"
+        android:layout_width="120dp"
+        android:layout_height="25dp"
+        android:gravity="center"
+        android:hint="X-axis"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/border_style"
+        android:layout_alignLeft="@+id/textView2"
+        android:layout_alignStart="@+id/textView2"
+        android:layout_below="@+id/textView6" />
+
+    <TextView
+        android:id="@+id/yaxis_magnetic"
+        android:layout_width="120dp"
+        android:layout_height="25dp"
+        android:gravity="center"
+        android:hint="Y-axis"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/border_style"
+        android:layout_below="@+id/textView6"
+        android:layout_toRightOf="@+id/xaxis_magnetic"
+        android:layout_toEndOf="@+id/xaxis_magnetic" />
+
+    <TextView
+        android:id="@+id/zaxis_magnetic"
+        android:layout_width="120dp"
+        android:layout_height="25dp"
+        android:gravity="center"
+        android:hint="Z-axis"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/border_style"
+        android:layout_below="@+id/textView6"
+        android:layout_toRightOf="@+id/yaxis_magnetic"
+        android:layout_toEndOf="@+id/yaxis_magnetic" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginBottom="8dp"
+        android:layout_below="@id/yaxis_magnetic"
+        android:gravity="center"
+        android:text="ROTATOIN VECTOR" />
+
+    <TextView
+        android:id="@+id/rotationVec_1"
+        android:layout_width="120dp"
+        android:layout_height="25dp"
+        android:gravity="center"
+        android:hint="X-axis"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/border_style"
+        android:layout_alignLeft="@+id/textView2"
+        android:layout_alignStart="@+id/textView2"
+        android:layout_below="@+id/textView7" />
+
+    <TextView
+        android:id="@+id/rotationVec_2"
+        android:layout_width="120dp"
+        android:layout_height="25dp"
+        android:gravity="center"
+        android:hint="Y-axis"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/border_style"
+        android:layout_below="@+id/textView7"
+        android:layout_toRightOf="@+id/rotationVec_1"
+        android:layout_toEndOf="@+id/rotationVec_1" />
+
+    <TextView
+        android:id="@+id/rotationVec_3"
+        android:layout_width="120dp"
+        android:layout_height="25dp"
+        android:gravity="center"
+        android:hint="Z-axis"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/border_style"
+        android:layout_below="@+id/textView7"
+        android:layout_toRightOf="@+id/rotationVec_2"
+        android:layout_toEndOf="@+id/rotationVec_2" />
+
+</RelativeLayout>
+
+</ScrollView>
