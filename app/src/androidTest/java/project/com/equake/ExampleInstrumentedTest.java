@@ -1,4 +1,4 @@
-package project.mingli.equake;
+package project.com.equake;
 
 import android.content.Context;
 import android.support.test.InstrumentationRegistry;
@@ -21,6 +21,6 @@ public class ExampleInstrumentedTest {
         // Context of the app under test.
         Context appContext = InstrumentationRegistry.getTargetContext();
 
-        assertEquals("project.mingli.equake", appContext.getPackageName());
+        assertEquals("project.com.equake", appContext.getPackageName());
     }
 }

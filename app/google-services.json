@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "77860720090",
+    "firebase_url": "https://equakeapp.firebaseio.com",
+    "project_id": "equakeapp",
+    "storage_bucket": "equakeapp.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:77860720090:android:4a1234bb5f22dac8",
+        "android_client_info": {
+          "package_name": "project.com.equake"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "77860720090-l5ubmebk0oe4rv45avjq46hsb7dsqp3s.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "project.com.equake",
+            "certificate_hash": "78420e588664dd2bb9a0671c6ad64b9f06e6f196"
+          }
+        },
+        {
+          "client_id": "77860720090-m695dnklbboo21pa102pcd12k2qm1q34.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAFlQJiVsV8wWqey5Mh7FOLL6omxjULujE"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "77860720090-m695dnklbboo21pa102pcd12k2qm1q34.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

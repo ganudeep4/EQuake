@@ -1,4 +1,4 @@
-package project.mingli.equake;
+package project.com.equake;
 
 import org.junit.Test;
 
